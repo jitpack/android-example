@@ -22,4 +22,4 @@ After these changes you should be able to run:
 
     gradle install
     
-    
+That's it. If install works and you have added a GitHub release it should work jitpack.io
