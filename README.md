@@ -6,12 +6,21 @@ https://jitpack.io/#jitpack/android-example/1.0.1
 
 Add it to your build.gradle with:
 ```gradle
+	repositories {
+	    maven {
+	        url "https://jitpack.io"
+	    }
+	}
+```
+and:
+
+```gradle
 dependencies {
     compile 'com.github.jitpack:android-example:1.0.1@aar'
 }
 ```
 
-# Adding maven plugin
+# Adding the maven plugin
 
 To enable installing into local maven repository and JitPack you need to add the 'android-maven' plugin:
 
