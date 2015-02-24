@@ -2,7 +2,7 @@
 
 Example Android project that works with jitpack.io
 
-https://jitpack.io/#jitpack/android-example/1.0.1
+https://jitpack.io/#jitpack/android-example/1.0.2
 
 Add it to your build.gradle with:
 ```gradle
@@ -14,7 +14,7 @@ and:
 
 ```gradle
 dependencies {
-    compile 'com.github.jitpack:android-example:1.0.1'
+    compile 'com.github.jitpack:android-example:1.0.2'
 }
 ```
 
