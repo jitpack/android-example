@@ -14,7 +14,7 @@ and:
 
 ```gradle
 dependencies {
-    compile 'com.github.jitpack:android-example:1.0.1@aar'
+    compile 'com.github.jitpack:android-example:1.0.1'
 }
 ```
 
