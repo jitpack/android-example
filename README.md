@@ -1,5 +1,8 @@
 # android-example
 
+[![Release](https://img.shields.io/github/release/jitpack/android-example.svg?label=maven version)](https://jitpack.io/#jitpack/android-example)
+
+
 Example Android project that works with jitpack.io
 
 https://jitpack.io/#jitpack/android-example/1.0.2
