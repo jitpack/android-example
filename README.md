@@ -38,7 +38,8 @@ That's it. If install works and you have added a GitHub release it should work j
 
 If you add a sample app to the same repo then your app needs to have a dependency on the library. To do this in your app/build.gradle add:
 
+```gradle
     dependencies {
         compile project(':library')
     }
-
+```
