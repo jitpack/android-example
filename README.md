@@ -36,9 +36,9 @@ That's it. If install works and you have added a GitHub release it should work j
 
 # Adding a sample app 
 
-If you add a sample app to the same repo then your app needs to have a dependency on the library. To do this in your app/build.gradle add a dependency:
+If you add a sample app to the same repo then your app needs to have a dependency on the library. To do this in your app/build.gradle add:
 
-dependencies {
-    compile project(':myLibrary')
-}
+    dependencies {
+        compile project(':library')
+    }
 
