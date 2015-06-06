@@ -27,12 +27,12 @@ dependencies {
 
 To enable installing into local maven repository and JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-plugin) plugin:
 
-1. Add `classpath 'com.github.dcendents:android-maven-plugin:1.2'` to root build.gradle under buildscripts
-2. Add `apply plugin: 'android-maven'` to the library/build.gradle
+1. Add `classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'` to root build.gradle under `buildscript { dependencies {`
+2. Add `com.github.dcendents.android-maven` to the library/build.gradle
 
 After these changes you should be able to run:
 
-    gradle install
+    ./gradlew install
     
 from the root of your project. If install works and you have added a GitHub release it should work on jitpack.io
 
