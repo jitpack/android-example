@@ -10,6 +10,7 @@ https://jitpack.io/#jitpack/android-example/1.0.2
 Add it to your build.gradle with:
 ```gradle
 repositories {
+    jcenter()
     maven { url "https://jitpack.io" }
 }
 ```
