@@ -22,9 +22,12 @@ dependencies {
 }
 ```
 
+## Multiple build variants
 
+If your library uses multiple flavours then see this example:
+https://github.com/jitpack-io/android-jitpack-library-example
 
-# Adding the maven plugin
+## Adding the maven plugin
 
 To enable installing into local maven repository and JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-plugin) plugin:
 
@@ -37,7 +40,7 @@ After these changes you should be able to run:
     
 from the root of your project. If install works and you have added a GitHub release it should work on jitpack.io
 
-# Adding a sample app 
+## Adding a sample app 
 
 If you add a sample app to the same repo then your app needs to have a dependency on the library. To do this in your app/build.gradle add:
 
