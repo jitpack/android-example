@@ -54,3 +54,4 @@ artifacts {
 //    task.from variant.javaCompile.destinationDir
 //    artifacts.add('archives', task);
 //}
+
