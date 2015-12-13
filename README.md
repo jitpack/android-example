@@ -1,16 +1,15 @@
 # android-example
 
-[![Release](https://img.shields.io/github/release/jitpack/android-example.svg?label=maven version)](https://jitpack.io/#jitpack/android-example)
+[![Release](https://img.shields.io/github/release/jitpack/android-example.svg?label=Jitpack)](https://jitpack.io/#jitpack/android-example)
 
-Example Android library project that works with jitpack.io. The 
-See also the guide for [building Android projects](https://github.com/jitpack/jitpack.io/blob/master/ANDROID.md)
+Example Android library project that works with jitpack.io.
+Also see the guide for [building Android projects](https://github.com/jitpack/jitpack.io/blob/master/ANDROID.md)
 
-https://jitpack.io/#jitpack/android-example/1.0.2
+https://jitpack.io/#jitpack/android-example
 
 Add it to your build.gradle with:
 ```gradle
 repositories {
-    jcenter()
     maven { url "https://jitpack.io" }
 }
 ```
@@ -18,7 +17,7 @@ and:
 
 ```gradle
 dependencies {
-    compile 'com.github.jitpack:android-example:1.0.2'
+    compile 'com.github.jitpack:android-example:{latest version}'
 }
 ```
 
