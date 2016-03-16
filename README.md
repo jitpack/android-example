@@ -30,7 +30,7 @@ https://github.com/jitpack-io/android-jitpack-library-example
 
 ## Adding the maven plugin
 
-To enable installing into local maven repository and JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-plugin) plugin:
+To enable installing into local maven repository and JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-gradle-plugin) plugin:
 
 1. Add `classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'` to root build.gradle under `buildscript { dependencies {`
 2. Add `com.github.dcendents.android-maven` to the library/build.gradle
