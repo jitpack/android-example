@@ -4,7 +4,7 @@
 
 Example Android library project that works with jitpack.io.
 
-See this [Tutorial](medium.com/@ome450901/publish-an-android-library-by-jitpack-a0342684cbd0) on how to publish an Android Library with JitPack.
+See this [Tutorial](https://medium.com/@ome450901/publish-an-android-library-by-jitpack-a0342684cbd0) on how to publish an Android Library with JitPack.
 
 For more details check out the [documentation](https://github.com/jitpack/jitpack.io/blob/master/ANDROID.md)
 
