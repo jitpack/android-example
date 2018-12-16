@@ -1,3 +1,5 @@
-<manifest package="io.jitpack.example.examplelib">
+<manifest package="io.jitpack.api">
+
+    <application />
 
 </manifest>
