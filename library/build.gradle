@@ -4,13 +4,6 @@ plugins {
     id 'maven-publish'
 }
 
-repositories {
-    mavenCentral()
-    google()
-    jcenter()
-    maven { url "https://jitpack.io" }
-}
-
 group = 'com.github.jitpack'
 version = '1.0'
 
