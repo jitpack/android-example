@@ -6,23 +6,25 @@ Example Android library project that works with jitpack.io.
 
 See this [Tutorial](https://medium.com/@ome450901/publish-an-android-library-by-jitpack-a0342684cbd0) on how to publish an Android Library with JitPack.
 
-For more details check out the [documentation](https://github.com/jitpack/jitpack.io/blob/master/ANDROID.md)
+For more details check out the [documentation](https://docs.jitpack.io/android/)
 
 https://jitpack.io/#jitpack/android-example
 
-Add it to your build.gradle with:
+Add it to your settings.gradle with:
 ```gradle
-allprojects {
-    repositories {
-        maven { url "https://jitpack.io" }
-    }
-}
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
 and:
 
 ```gradle
 dependencies {
-    compile 'com.github.jitpack:android-example:{latest version}'
+    implementation 'com.github.jitpack:android-example:{latest version}'
 }
 ```
 
@@ -33,16 +35,31 @@ https://github.com/jitpack-io/android-jitpack-library-example
 
 ## Adding the maven plugin
 
-To enable installing into local maven repository and JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-gradle-plugin) plugin:
+To enable installing into local maven repository and JitPack you need to add the [maven-publish](https://developer.android.com/studio/build/maven-publish-plugin) plugin:
 
-1. Add `classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'` to root build.gradle under `buildscript { dependencies {`
-2. Add `com.github.dcendents.android-maven` to the library/build.gradle
+Then add the publishing section to your library build.gradle:
+```gradle
+publishing {
+  publications {
+    release(MavenPublication) {
+      groupId = 'com.my-company'
+      artifactId = 'my-library'
+      version = '1.0'
+
+      afterEvaluate {
+        from components.release
+      }
+    }
+  }
+}
+```
 
 After these changes you should be able to run:
 
-    ./gradlew install
+    ./gradlew publishToMavenLocal
     
-from the root of your project. If install works and you have added a GitHub release it should work on jitpack.io
+from the root of your project. 
+If `publishToMavenLocal` works and you have added a GitHub release it should work on jitpack.io
 
 ## Adding a sample app 
 
